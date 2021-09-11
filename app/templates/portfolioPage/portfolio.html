@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Portfolio Page</h1>
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Owner</th>
+                <th scope="col">Repository Name</th>
+                <th scope="col">URL</th>
+                <th scope="col">Take a look for yourself!</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for i in range(repos|length) %}
+            <tr>
+                <th scope="row">{{ i }}</th>
+                <td>{{ repos[i]["owner"]["login"] }}</td>
+                <td>{{repos[i]["name"]}}</td>
+                <td><a href="{{ repos[i]['html_url'] }}" target="_blank">{{repos[i]['html_url']}}</a></td>
+                <td><a href="{{ repos[i]['html_url'] + '/archive/refs/heads/master.zip' }}">Download</a></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
