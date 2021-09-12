@@ -1,7 +1,36 @@
 {% extends "base.html" %}
 
-{% block content %}
-<h1>About Page</h1>
-<img src="{{ url_for('static', filename='images/CVIMAGES_Page_1.jpg') }}" alt="" id="image1">
-<img src="{{ url_for('static', filename='images/CVIMAGES_Page_2.jpg') }}" alt="" id="image2">
+{% block about %}
+<div>
+    <div class="outer-wrapper">
+        <div class="wrapper-something">
+            <div class="slide one">
+                <span class="display-1" id="first">Hello,</span>
+                <span class="display-1" id="second">welcome</span>
+                <span class="display-1" id="third">to</span>
+                <span class="display-1" id="fourth">the</span>
+                <span class="display-1" id="fifth">About Page</span>
+                <i class="far fa-arrow-alt-circle-right fa-3x"></i>
+                <span class="display-1" id="sixth"><a href="/">Or Go Back.</a></span>
+            </div>
+            <div class="container-fluid slide two">
+                <audio src="{{ url_for('static', filename='/audio/audio.wav') }}"></audio>
+                <h2 class="display-1 slide2-heading" style="color: black;">This is where I come from:</h2>
+                <div class="container-iframe">
+                    <iframe class="embed-responsive embed-responsive-16by9" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40666.825157711064!2d-3.6189584288567334!3d50.428497323081935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486d05153a96414f%3A0x4fd6edcbdf832569!2sPaignton!5e0!3m2!1sen!2suk!4v1631432948284!5m2!1sen!2suk" width="40%" height="100%" style="border:0;" loading="lazy"></iframe>
+                    <h3 class="display-1 text-muted">Click on whitespace to play...</h3>
+                </div>
+            </div>
+            <div class="container-fluid slide three">
+                <audio class="audio2" src="{{ url_for('static', filename='/audio/helicopter.mp3') }}"></audio>
+                <h2 class="display-1 slide3-heading" style="color: white;">This is where I live now:</h2>
+                <div class="container-iframe2">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31926.8184084218!2d-2.740774950304363!3d52.07799878759576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x486fd425aa6e5341%3A0xd59c9a4bfd3c6c96!2sHereford!5e0!3m2!1sen!2suk!4v1631437460046!5m2!1sen!2suk" width="40%" height="100%" style="border:0;" loading="lazy"></iframe>
+                    <h3 class="display-1 text-muted" style="color: white !important;">Click on whitespace to play...</h3>
+                </div>
+            </div>
+            <div class="slide four"></div>
+        </div>
+    </div>
+</div>
 {% endblock %}

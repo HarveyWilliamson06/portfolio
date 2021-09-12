@@ -16,7 +16,7 @@
         <tbody>
             {% for i in range(repos|length) %}
             <tr>
-                <th scope="row">{{ i }}</th>
+                <th scope="row">{{ i + 1 }}</th>
                 <td>{{ repos[i]["owner"]["login"] }}</td>
                 <td>{{repos[i]["name"]}}</td>
                 <td><a href="{{ repos[i]['html_url'] }}" target="_blank">{{repos[i]['html_url']}}</a></td>

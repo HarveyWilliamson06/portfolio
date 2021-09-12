@@ -1,0 +1,12 @@
+.mygrid {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+@media (max-width: 1400px) {
+    .mygrid {
+        grid-template-columns: 1fr;
+    }
+}

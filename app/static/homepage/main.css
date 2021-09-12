@@ -1,0 +1,22 @@
+.heading {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#1e5799+0,2989d8+50,ffffff+50,ffffff+50 */
+    background: rgb(30,87,153); /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 50%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 50%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 50%,rgba(255,255,255,1) 50%,rgba(255,255,255,1) 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    place-items: center;
+    height: 30vh;
+    display: grid;
+}
+
+.heading h1 {
+    background: -webkit-linear-gradient(-45deg, rgba(255,255,255,1) 50%,rgba(0,0,0,1) 50%,rgba(0,0,0,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+}
+
+.space {
+    height: 100vh;
+}

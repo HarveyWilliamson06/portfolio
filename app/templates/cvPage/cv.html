@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>CV Page</h1>
+<div class="mygrid">
+    <div class="img1">
+        <img src="{{ url_for('static', filename='images/CVIMAGES_Page_1.jpg') }}" alt="" class="img-fluid">
+    </div>
+    <div class="img2">
+        <img src="{{ url_for('static', filename='images/CVIMAGES_Page_2.jpg') }}" alt="" class="img-fluid">
+    </div>
+</div>
+<div>
+    <div class="line"></div>
+    <h2 class="heading2">Want to download the images?</h2>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Image 1</th>
+                    <th scope="col">Image 2</th>
+                    <th scope="col">PDF</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="{{ url_for('static', filename='images/CVIMAGES_Page_1.jpg') }}" download>Download</a></td>
+                    <td><a href="{{ url_for('static', filename='images/CVIMAGES_Page_2.jpg') }}" download>Download</a></td>
+                    <td><a href="{{ url_for('static', filename='pdf/Harvey_Williamson_CV.pdf') }}" download>Downlaod</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}
